@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página Pessoal</title>
+  <style>
+    body {
+      background-color: #f0f8ff; /* Cor suave */
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #2e8b57;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      line-height: 2em; /* Espaçamento entre os itens */
+    }
+
+    img.hobby {
+      width: 300px;
+      border-radius: 15px;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #999;
+    }
+
+    td {
+      text-align: center;
+      padding: 10px;
+    }
+
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ff4500;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #mensagem {
+      margin-top: 15px;
+      font-style: italic;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Letícia</h1>
+
+  <p>
+    Olá! Meu nome é Letícia e moro em Belo Horizonte. Sou apaixonada por tecnologia,
+    adoro ler livros de ficção científica, praticar crossfit, crochê e aprender coisas novas todos os dias!
+  </p>
+
+  <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+  <div id="mensagem"></div>
+
+  <h2>Meus Hobbies</h2>
+  <ul>
+    <li>Ler livros</li>
+    <li>Crossfit</li>
+    <li>Crochê</li>
+  </ul>
+
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fbr%2Ffotos%2Ffazer-croch%25C3%25AA&psig=AOvVaw0v6QOhuzOZbnSHljVdI_qF&ust=1751912461606000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJisodHsqI4DFQAAAAAdAAAAABAE"
+       alt="Croche" class="hobby">
+
+  <h2>Países que quero visitar</h2>
+  <table>
+    <tr>
+      <td>Japão</td>
+      <td><img src="https://flagcdn.com/w320/jp.png" alt="Bandeira do Japão" width="100"></td>
+    </tr>
+    <tr>
+      <td>Itália</td>
+      <td><img src="https://flagcdn.com/w320/it.png" alt="Bandeira da Itália" width="100"></td>
+    </tr>
+    <tr>
+      <td>Canadá</td>
+      <td><img src="https://flagcdn.com/w320/ca.png" alt="Bandeira do Canadá" width="100"></td>
+    </tr>
+  </table>
+
+  <p>Visite um dos meus sites favoritos: <a href="https://open.spotify.com/intl-pt" target="_blank">Spotify</a></p>
+
+  <script>
+    function mostrarMensagem() {
+      const mensagemDiv = document.getElementById('mensagem');
+      mensagemDiv.textContent = "Depois é depois, amanhhã é amanhã.";
+    }
+  </script>
+
+</body>
+</html>
